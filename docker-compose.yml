@@ -1,0 +1,19 @@
+version: '2'
+services:
+    nodejs:
+        image: node-app
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        ports:
+            - "3000:3000"
+        environment:
+            - NODE_ENV=development
+        volumes:
+            - .:/home/node/app
+        working_dir: /home/node/app
+        entrypoint: "/usr/local/bin/setup.sh"
+        container_name: nodejs
+       
+volumes:
+    node_modules: 
