@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './NotesList.css';
+import Note from './Note.js';
 
 class NotesList extends Component {
   render() {
+    let elements = [ "Item one", "Item B", "And thirdly", "Item d", "5" ];
     return (
       <div className="NotesList-list">
-        <ul>
-          <li>Note #1</li>
-          <li>Note #2</li>
-        </ul>
+          { elements.map( ( value, index ) => {
+            return <Note key={ index } value={ value } />
+          } ) }
       </div>
     );
   }
