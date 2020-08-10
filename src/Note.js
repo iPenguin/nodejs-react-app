@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import './Note.css';
 
 class Note extends Component {
+  constructor( props ) {
+    super( props );
+    this._text = "* " + this.props.value;
+  }
+
   render() {
 
     return (
       <div className="Note-base">
-        { this.props.value }
+        {this._text}
       </div>
     );
   }
