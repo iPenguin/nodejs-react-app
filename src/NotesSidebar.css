@@ -3,6 +3,17 @@
   height: calc(100% - 5.2em);
   left: 0;
   position: fixed;
-  width: 15em;
   top: 3.2em;
+  width: 15em;
+}
+
+.NotesSidebar-list label {
+  display: block;
+  margin: 0.2em 0;
+  width: 100%;
+}
+
+.NotesSidebar-list select {
+  height: calc( 100% - 1.8em);
+  width: 100%;
 }
