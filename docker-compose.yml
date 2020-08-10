@@ -14,6 +14,14 @@ services:
         working_dir: /home/node/app
         entrypoint: "/usr/local/bin/setup.sh"
         container_name: nodejs
-       
-volumes:
-    node_modules: 
+    mongo:
+        image: mongo:4-bionic
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: admin
+            MONGO_INITDB_ROOT_PASSWORD: password
+        volumes:
+            - ./data:/data/db
+        ports:
+            - "8081:8081"
+            - "27017:27017"
+        container_name: mongodb
