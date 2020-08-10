@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NotesList from './NotesList.js';
+import UserMenu from './UserMenu.js';
+import NotesSidebar from './NotesSidebar.js';
+import NotesBody from './NotesBody.js';
 
 class App extends Component {
   render() {
@@ -9,9 +11,18 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to nodejs.milco.info</h1>
+          <h1 className="App-title">Welcome to Notes.js</h1>
+          <UserMenu isLoggedIn="false" />
         </header>
-        <NotesList />
+        <div className="App-body">
+          <NotesSidebar />
+          <NotesBody />
+        </div>
+        <footer className="App-footer">
+          <div className="App-footer-copyright">
+            Copyright &copy; 2020
+          </div>
+        </footer>
       </div>
     );
   }

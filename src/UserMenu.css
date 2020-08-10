@@ -1,0 +1,14 @@
+.UserMenu-items {
+  float: right;
+}
+
+.UserMenu-items div {
+  display: inline-block;
+  padding-right: 1em;
+  padding-top: 0.5em;
+}
+
+.UserMenu-items div a {
+    color: white;
+    text-decoration: none;
+}
