@@ -5,3 +5,13 @@
   top: 3.2em;
   width: 100%;
 }
+
+.NotesBody-freeform {
+  height: 100%;
+  width: 100%;
+}
+
+.NotesBody-columns {
+  height: 100%;
+  width: 100%;
+}

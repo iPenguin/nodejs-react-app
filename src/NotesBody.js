@@ -7,8 +7,15 @@ export default class NotesBody extends Component {
   }
 
   render() {
+    let content = <canvas className='NotesBody-freeform' id='NotesBodyCanvas'></canvas>;
+
+    if( this.props.content_type == "columns" ) {
+      content = <div className='NotesBody-columns'></div>;
+    }
+
     return (
       <div className="NotesBody-window">
+        {content}
       </div>
     );
   }
