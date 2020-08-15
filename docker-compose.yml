@@ -8,7 +8,7 @@ services:
         ports:
             - "3000:3000"
         environment:
-            - NODE_ENV=development
+            - "NODE_ENV=development"
         volumes:
             - .:/home/node/app
         working_dir: /home/node/app
@@ -17,11 +17,10 @@ services:
     mongo:
         image: mongo:4-bionic
         environment:
-            MONGO_INITDB_ROOT_USERNAME: admin
-            MONGO_INITDB_ROOT_PASSWORD: password
+            - "MONGO_INITDB_ROOT_USERNAME=admin"
+            - "MONGO_INITDB_ROOT_PASSWORD=password"
         volumes:
             - ./data:/data/db
         ports:
-            - "8081:8081"
             - "27017:27017"
         container_name: mongodb
