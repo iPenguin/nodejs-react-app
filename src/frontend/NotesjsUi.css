@@ -1,13 +1,13 @@
-.App {
+.NotesjsUi {
   text-align: center;
 }
 
-.App-logo {
+.NotesjsUi-logo {
   float: left;
   height: 3em;
 }
 
-.App-header {
+.NotesjsUi-header {
   background-color: #222;
   color: white;
   height: 3em;
@@ -16,17 +16,17 @@
   width: 100%;
 }
 
-.App-title {
+.NotesjsUi-title {
   float: left;
   font-size: 1.5em;
   margin: 0.4em 0.2em 0.2em 0;
 }
 
-.App-intro {
+.NotesjsUi-intro {
   font-size: large;
 }
 
-.App-footer {
+.NotesjsUi-footer {
   background-color: #222;
   bottom: 0;
   color: white;
@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.App-footer-copyright {
+.NotesjsUi-footer-copyright {
   font-size: 0.5em;
   padding-top: 1em;
 }

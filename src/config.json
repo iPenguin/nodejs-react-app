@@ -1,0 +1,6 @@
+{
+  notesjs_database_url: "mongodb://127.0.0.1:/notesjs",
+  notesjs_user: "notesjs",
+  notesjs_password: "password",
+  notesjs_user_authentication: "true"
+}
